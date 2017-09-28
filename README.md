@@ -1,11 +1,11 @@
 # SubtreeLFS
-[Subtree](https://git-scm.com/book/ja/v1/Git-%E3%81%AE%E3%81%95%E3%81%BE%E3%81%96%E3%81%BE%E3%81%AA%E3%83%84%E3%83%BC%E3%83%AB-%E3%82%B5%E3%83%96%E3%83%84%E3%83%AA%E3%83%BC%E3%83%9E%E3%83%BC%E3%82%B8) 機能を用いて、[Git-LFS](https://git-lfs.github.com/) の適用された外部リポジトリ（例：[LibraryLFS](https://github.com/LUXOPHIA/LibraryLFS)）をマージする方法。  
+[Subtree](https://git-scm.com/book/ja/v1/Git-%E3%81%AE%E3%81%95%E3%81%BE%E3%81%96%E3%81%BE%E3%81%AA%E3%83%84%E3%83%BC%E3%83%AB-%E3%82%B5%E3%83%96%E3%83%84%E3%83%AA%E3%83%BC%E3%83%9E%E3%83%BC%E3%82%B8) 機能を用いて、[Git-LFS](https://git-lfs.github.com/) の有効な外部リポジトリ（例：[LibraryLFS](https://github.com/LUXOPHIA/LibraryLFS)）をマージする方法。  
 How to subtree-merge the external repository (ex."[LibraryLFS](https://github.com/LUXOPHIA/LibraryLFS)") which [Git-LFS](https://git-lfs.github.com/) is actived.
 
-> **【結論】**マージ先リポジトリにおいて、予め Git-LFS を有効化し、バイナリファイルのコミットを一度でも行えば（その後ハードリセットしても構わない）、同じく Git-LFS の有効な外部リポジトリをサブツリーマージすることができる。  
-**【Conclusion】**In the merge destination repository, if you activate Git-LFS in advance and commit the binary file at least once (You can hard-reset it later), you can subtree-merge the external repositories which Git-LFS is actived.
+> **【結論】** マージ先リポジトリにおいて、予め Git-LFS を有効化し、バイナリファイルのコミットを一度でも行えば（その後ハードリセットしても構わない）、同じく Git-LFS の有効な外部リポジトリをサブツリーマージすることができる。  
+**【Conclusion】** In the merge destination repository, if you activate Git-LFS in advance and commit the binary file at least once (You can hard-reset it later), you can subtree-merge the external repositories which Git-LFS is actived.
 
-##▼ 失敗１
+## ▼ 失敗１
 単純にサブツリーマージしてみる。
 
 1. 「サブツリーの追加/リンク…」を選択。  
@@ -34,7 +34,7 @@ How to subtree-merge the external repository (ex."[LibraryLFS](https://github.co
 1. 不正なファイルが追加される。  
 [![](https://github.com/LUXOPHIA/SubtreeLFS/raw/README/README/SubtreeLFS-04.png)](https://github.com/LUXOPHIA/SubtreeLFS/raw/README/README/SubtreeLFS-04.png)
 
-##▼ 失敗２
+## ▼ 失敗２
 外部リポジトリをサブツリーマージする前に、本リポジトリに Git LFS を適用してみる。
 
 1. 「Track / untrack files…」を選択  
@@ -70,7 +70,7 @@ How to subtree-merge the external repository (ex."[LibraryLFS](https://github.co
 >     fatal: LibraryLFS/FLOSVOLARE.png: smudge filter lfs failed
 >     エラー終了しました。エラーの内容は上記をご覧ください。
 
-##▼ 成功！
+## ▼ 成功！
 
 1. 外部リポジトリと同じバイナリファイルを追加。  
 [![](https://github.com/LUXOPHIA/SubtreeLFS/raw/README/README/SubtreeLFS-11.png)](https://github.com/LUXOPHIA/SubtreeLFS/raw/README/README/SubtreeLFS-11.png)
