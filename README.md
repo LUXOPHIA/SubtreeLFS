@@ -1,5 +1,5 @@
 # SubtreeLFS
-[Subtree](https://git-scm.com/book/ja/v1/Git-%E3%81%AE%E3%81%95%E3%81%BE%E3%81%96%E3%81%BE%E3%81%AA%E3%83%84%E3%83%BC%E3%83%AB-%E3%82%B5%E3%83%96%E3%83%84%E3%83%AA%E3%83%BC%E3%83%9E%E3%83%BC%E3%82%B8) 機能を用いて、[Git-LFS](https://git-lfs.github.com/) の有効な外部リポジトリ（例：[LibraryLFS](https://github.com/LUXOPHIA/LibraryLFS)）をマージする方法。  
+[Subtree](https://git-scm.com/book/ja/v1/Git-%E3%81%AE%E3%81%95%E3%81%BE%E3%81%96%E3%81%BE%E3%81%AA%E3%83%84%E3%83%BC%E3%83%AB-%E3%82%B5%E3%83%96%E3%83%84%E3%83%AA%E3%83%BC%E3%83%9E%E3%83%BC%E3%82%B8) 機能を用いて、[Git-LFS](https://git-lfs.github.com/) の有効な外部リポジトリ（例：[LibraryLFS](https://github.com/LUXOPHIA/LibraryLFS)）をマージする方法。  
 How to subtree-merge the external repository (ex."[LibraryLFS](https://github.com/LUXOPHIA/LibraryLFS)") which [Git-LFS](https://git-lfs.github.com/) is actived.
 
 > **【結論】** マージ先リポジトリにおいて、予め Git-LFS を有効化し、バイナリファイルのコミットを一度でも行えば（その後ハードリセットしても構わない）、同じく Git-LFS の有効な外部リポジトリをサブツリーマージすることができる。  
